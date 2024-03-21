@@ -1,35 +1,43 @@
 import { Drafts, Home, Inbox, ShoppingCart } from '@mui/icons-material';
-import { Box, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
 
 const LeftBody = () => {
   return (
-    <Box flex={1} p={2} sx={{ xs: 'none', sm: 'block', backgroundColor: 'primary.main' }}>
+    <Box flex={1} p={2} sx={{ xs: 'none', sm: 'block' }}>
       <Box position="fixed">
         <List>
           <ListItem disablePadding>
-            <ListItemIcon>
-              <Home />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
+            <ListItemButton>
+              <ListItemIcon>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemIcon>
-              <Inbox />
-            </ListItemIcon>
-            <ListItemText primary="Inbox" />
+            <ListItemButton>
+              <ListItemIcon>
+                <Inbox />
+              </ListItemIcon>
+              <ListItemText primary="Inbox" />
+            </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemIcon>
-              <Drafts />
-            </ListItemIcon>
-            <ListItemText primary="Drafts" />
+            <ListItemButton>
+              <ListItemIcon>
+                <Drafts />
+              </ListItemIcon>
+              <ListItemText primary="Drafts" />
+            </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemIcon>
-              <ShoppingCart />
-            </ListItemIcon>
-            <ListItemText primary="Shopping" />
+            <ListItemButton>
+              <ListItemIcon>
+                <ShoppingCart />
+              </ListItemIcon>
+              <ListItemText primary="Shopping" />
+            </ListItemButton>
           </ListItem>
         </List>
       </Box>
