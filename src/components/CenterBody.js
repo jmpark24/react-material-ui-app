@@ -4,7 +4,7 @@ import Item from './Item';
 
 const CenterBody = () => {
   return (
-    <Box flex={3} p={2}>
+    <Box flex={3} p={2} gap={5}>
       <Item />
       <Item />
       <Item />
